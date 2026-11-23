@@ -1,6 +1,7 @@
 # A v* tag publishes lyrelog to PyPI with trusted publishing (no token: PyPI trusts this
-# workflow in the environment "pypi"), after the tests and mypy. The tag must match
-# pyproject.toml's version.
+# workflow in the environment "pypi"), after the tests and mypy, with attestations (PEP 740)
+# signed by this workflow. The tag must match pyproject.toml's version. (0.9.0 went out with
+# uv publish, which signs none.)
 name: publish
 
 on:
@@ -25,4 +26,6 @@ jobs:
       - run: uv run --locked pytest -q
       - run: uv run --locked mypy src
       - run: uv build
-      - run: uv publish --trusted-publishing always
+      - uses: pypa/gh-action-pypi-publish@7245906fb61fa33a13554f9d5fb856fe61758086 # v1.14.3
+        with:
+          attestations: true
