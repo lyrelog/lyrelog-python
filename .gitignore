@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+dist/
+build/
+*.egg-info/
+
+# Agents guide: kept on the maintainer's machine, not in the public repo
+CLAUDE.md
