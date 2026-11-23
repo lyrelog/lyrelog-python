@@ -1,4 +1,17 @@
-# Lyrelog for Python
+<p align="center">
+  <a href="https://lyrelog.com">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://lyrelog.com/readme/python-dark.png">
+      <img alt="Lyrelog for Python" src="https://lyrelog.com/readme/python-light.png" width="600">
+    </picture>
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://docs.lyrelog.com/sdks/python"><b>Documentation</b></a> ·
+  <a href="https://docs.lyrelog.com/quickstart">Quickstart</a> ·
+  <a href="https://lyrelog.com">lyrelog.com</a>
+</p>
 
 Structured logs from your Python services to [Lyrelog](https://lyrelog.com), the hosted log
 service. Python 3.11+, standard library only, typed (`py.typed`).
