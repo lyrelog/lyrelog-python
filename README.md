@@ -19,7 +19,7 @@ service. Python 3.11+, standard library only, typed (`py.typed`).
 ## Install
 
 ```bash
-uv add lyrelog==0.9.0          # or: pip install lyrelog==0.9.0
+uv add lyrelog==1.0.0          # or: pip install lyrelog==1.0.0
 ```
 
 ## Use
@@ -263,7 +263,7 @@ An empty `api_key` gives a client that accepts events and sends nothing, so a mi
 environment variable in development doesn't crash the app.
 
 Every event also carries `os_name` (`platform.system()`), `os_version` (`platform.release()`),
-`device_model` (`platform.machine()`), `sdk` (`lyrelog-python/0.9.0`), an `install_id` and a
+`device_model` (`platform.machine()`), `sdk` (`lyrelog-python/1.0.0`), an `install_id` and a
 `session_id` (both per process; the session is new after 30 minutes without an event).
 
 ## Privacy

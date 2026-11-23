@@ -29,7 +29,7 @@ def test_the_metadata_is_complete():
     assert urls["Homepage"] == "https://lyrelog.com"
     assert urls["Documentation"] == "https://docs.lyrelog.com"
     assert PROJECT["authors"] == [{"name": "Lyrelog", "email": "hello@lyrelog.com"}]
-    assert "Development Status :: 4 - Beta" in classifiers
+    assert "Development Status :: 5 - Production/Stable" in classifiers
     assert PROJECT["keywords"]
     assert (ROOT / "src" / "lyrelog" / "py.typed").exists()
 

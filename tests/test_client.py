@@ -29,7 +29,7 @@ def test_events_reach_the_ingest_with_the_wire_shape(stub, make_client):
     assert event["user_id"] == "u_1" and event["attrs"] == {"amount": 499}
     resource = event["resource"]
     assert resource["platform"] == "python"
-    assert resource["sdk"] == "lyrelog-python/0.9.0"
+    assert resource["sdk"] == "lyrelog-python/1.0.0"
     assert resource["environment"] == "staging"
     assert resource["app_version"] == "1.2.3" and resource["app_id"] == "tilefall-api"
     assert set(resource) <= {"app_id", "app_version", "app_build", "os_name", "os_version", "device_model",

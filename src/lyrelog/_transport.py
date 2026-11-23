@@ -15,7 +15,7 @@ from dataclasses import dataclass
 from typing import Any, Callable, Mapping, Optional, Protocol
 
 SDK_NAME = "lyrelog-python"
-SDK_VERSION = "0.9.0"
+SDK_VERSION = "1.0.0"
 SDK = f"{SDK_NAME}/{SDK_VERSION}"
 
 DEFAULT_ENDPOINT = "https://ingest.lyrelog.com"

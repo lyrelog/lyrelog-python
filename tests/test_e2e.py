@@ -16,7 +16,7 @@ pytestmark = pytest.mark.skipif(not (URL and KEY), reason="set LYRELOG_E2E_URL a
 
 def test_events_are_accepted_by_a_real_ingest():
     run = uuid.uuid4().hex[:8]
-    client = lyrelog.Client(endpoint=URL, api_key=KEY, environment="e2e", release="0.9.0", app_id="lyrelog-python-e2e",
+    client = lyrelog.Client(endpoint=URL, api_key=KEY, environment="e2e", release="1.0.0", app_id="lyrelog-python-e2e",
                             flush_interval=60)
     client.set_user("e2e-user")
     client.info("e2e_python_info", category="e2e", attrs={"run": run, "n": 1, "ok": True, "tags": ["a"]},
