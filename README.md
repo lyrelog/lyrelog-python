@@ -13,7 +13,7 @@
   <a href="https://lyrelog.com">lyrelog.com</a>
 </p>
 
-Structured logs from your Python services to [Lyrelog](https://lyrelog.com), the hosted log
+Structured logs from your Python services to [Lyrelog](https://lyrelog.com/platforms/python), the hosted log
 service. Python 3.11+, standard library only, typed (`py.typed`).
 
 ## Install
